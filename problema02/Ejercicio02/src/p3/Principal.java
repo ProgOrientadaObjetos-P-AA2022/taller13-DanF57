@@ -22,8 +22,6 @@ public class Principal {
     public static void main(String[] args) {
 
         ArrayList<Matriculas> matriculas = new ArrayList<>();
-
-        TipoMatricula tipos = new TipoMatricula();
         
         MatriculaCampamento mcamp = new MatriculaCampamento();
         MatriculaColegio mcolegio = new MatriculaColegio();
@@ -40,9 +38,12 @@ public class Principal {
         matriculas.add(mmaternal2);
         
         for (int i = 0; i < matriculas.size(); i++) {
+            matriculas.get(i).establecerNombre();
             matriculas.get(i).establecerTarifa();
         }
-        
+
+
+        TipoMatricula tipos = new TipoMatricula();
         tipos.establecerMatriculas(matriculas);
         tipos.establecerPromedioTarifas();
         

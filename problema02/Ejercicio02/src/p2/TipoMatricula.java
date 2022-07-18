@@ -42,8 +42,14 @@ public class TipoMatricula {
 
     @Override
     public String toString() {
-        String cadena = String.format("Promedio: %.2f\n",
-                 obtenerPromedioTarifas());
+        String cadena = String.format("-----Listado Matriculas----\n");
+
+        for (int i = 0; i < matriculas.size(); i++) {
+            cadena = String.format("%s\n%s", cadena, matriculas.get(i));
+        }
+        cadena = String.format("%s\nPromedio: %.2f\n",
+                cadena,
+                obtenerPromedioTarifas());
         return cadena;
     }
 }
