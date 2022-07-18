@@ -5,11 +5,12 @@
  */
 package p1;
 
+import p2.Matriculas;
 /**
  *
  * @author reroes
  */
-public class MatriculaJardin {
+public class MatriculaJardin extends Matriculas{
     private double tarifa;
     
         

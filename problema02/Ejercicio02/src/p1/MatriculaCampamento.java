@@ -5,11 +5,12 @@
  */
 package p1;
 
+import p2.Matriculas;
 /**
  *
  * @author reroes
  */
-public class MatriculaCampamento {
+public class MatriculaCampamento extends Matriculas{
     private double tarifa;
     
     public void establecerTarifa(){
